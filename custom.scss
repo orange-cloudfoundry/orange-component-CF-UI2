@@ -1,0 +1,42 @@
+// Empty customization file - DO NOT EDIT
+
+// This file is in the .gitignore - changes will not be flagged
+
+// The customization build step will replace this file with the custom one if provided
+
+@import './mat-colors';
+
+// Define colors
+$orange-primary: ( 50: #fff3e0, 100: #ffe0b2, 200: #ffcc80, 300: #ffb74d, 400: #f16e00, 500: #f16e00, 600: #f16e00, 700: #f16e00, 800: #ef6c00, 900: #e65100, A100: #ffd180, A200: #ffab40, A400: #ff9100, A700: #ff6d00, contrast: ( 50: $black-87-opacity, 100: $black-87-opacity, 200: $black-87-opacity, 300: $black-87-opacity, 400: $black-87-opacity, 500: $black-87-opacity, 600: $black-87-opacity, 700: $black-87-opacity, 800: white, 900: white, A100: $black-87-opacity, A200: $black-87-opacity, A400: $black-87-opacity, A700: black, ));
+$orange-accent: ( 50: #fffde7, 100: #fff9c4, 200: #fff59d, 300: #fff176, 400: #fc0, 500: #fc0, 600: #fc0, 700: #fbc02d, 800: #f9a825, 900: #f57f17, A100: #ffff8d, A200: #ff0, A400: #ffea00, A700: #ffd600, contrast: ( 50: $black-87-opacity, 100: $black-87-opacity, 200: $black-87-opacity, 300: $black-87-opacity, 400: $black-87-opacity, 500: $black-87-opacity, 600: $black-87-opacity, 700: $black-87-opacity, 800: $black-87-opacity, 900: $black-87-opacity, A100: $black-87-opacity, A200: $black-87-opacity, A400: $black-87-opacity, A700: $black-87-opacity, ));
+$orange-warn: ( 50: #ffebee, 100: #ffcdd2, 200: #ef9a9a, 300: #e57373, 400: #ef5350, 500: #f44336, 600: #e53935, 700: #d32f2f, 800: #c62828, 900: #b71c1c, A100: #ff8a80, A200: #ff5252, A400: #ff1744, A700: #d50000, contrast: ( 50: $black-87-opacity, 100: $black-87-opacity, 200: $black-87-opacity, 300: $black-87-opacity, 400: $black-87-opacity, 500: white, 600: white, 700: white, 800: $white-87-opacity, 900: $white-87-opacity, A100: $black-87-opacity, A200: white, A400: white, A700: white, ));
+
+
+// Orange Themes palettes 
+$orange-theme-primary: mat-palette($orange-primary);
+$orange-theme-accent: mat-palette($orange-accent);
+$orange-theme-warn: mat-palette($orange-warn);
+$orange-app-theme: mat-light-theme($orange-theme-primary, $orange-theme-accent, $orange-theme-warn);
+
+// Default to using the open source theme
+$orange-theme: $orange-app-theme;
+$orange-nav-theme: $orange-app-theme;
+$orange-status-theme: $orange-app-theme;
+
+// Set Orange theme as the one to use
+$stratos-theme: $orange-theme;
+
+// extras
+
+body {
+  font-family: 'Helvetica Neue',Arial,sans-serif !important;
+}
+
+.side-nav__top {
+  background-color: #000000 !important;
+}
+
+.side-nav {
+  background-color: #000000 !important;
+}
+
