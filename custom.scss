@@ -22,7 +22,8 @@ $orange-app-theme: mat-light-theme($orange-theme-primary, $orange-theme-primary,
 // Default to using the open source theme
 $orange-theme: $orange-app-theme;
 $orange-nav-theme: null;
-$orange-status-theme: (success: map-get($orange-success, 400), warning: map-get($orange-warn, 500), danger: mat-color($orange-theme-warn), tentative: map-get($orange-warn, 500), busy: mat-color($orange-theme-primary), text: $orange-white, );
+// For Stratos warning == accent & Danger == warning
+$orange-status-theme: (success: map-get($orange-success, 400), warning: map-get($orange-accent, 500), danger: mat-color($orange-theme-warn), tentative: map-get($orange-warn, 500), busy: mat-color($orange-theme-primary), text: $orange-white, );
 
 // Set Orange theme as the one to use
 $stratos-theme: $orange-theme;
